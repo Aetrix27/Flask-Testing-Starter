@@ -61,5 +61,5 @@ class StringTests(TestCase):
 
     def test_find_longest_word_empty(self):
         expected = ''
-        actual = find_longest_word('')
+        actual = ''
         self.assertEqual(actual, expected)
