@@ -25,14 +25,14 @@ class StringTests(TestCase):
 
     def test_reverse_long(self):
         """Test reversing a long string."""
-        expected = ''
-        actual = ''
+        expected = 'emoselbuort'
+        actual = reverse('troublesome')
         self.assertEqual(actual, expected)
 
     def test_reverse_short(self):
         """Test reversing a short string."""
-        expected = ''
-        actual = ''
+        expected = 'trohs'
+        actual = reverse('short')
         self.assertEqual(actual, expected)
 
     def test_reverse_words_long(self):
@@ -43,22 +43,21 @@ class StringTests(TestCase):
 
     def test_reverse_words_short(self):
         """Test reversing words in a short string."""
-        expected = ''
-        actual = ''
+        expected = 'tI si ynnus'
+        actual = reverse_words('It is sunny')
         self.assertEqual(actual, expected)
 
     def test_sarcastic_long(self):
         """Test sarcastic-ifying a long string."""
-        expected = ''
-        actual = ''
+        expected = 'YoU aRe So StRoNg'
+        actual = sarcastic('You are so strong')
         self.assertEqual(actual, expected)
 
     def test_sarcastic_short(self):
         """Test sarcastic-ifying a short string."""
-        expected = ''
-        actual = ''
+        expected = 'AwEsOmE'
+        actual = sarcastic('awesome')
         self.assertEqual(actual, expected)
-
 
     def test_find_longest_word_empty(self):
         expected = ''

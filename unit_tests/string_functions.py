@@ -29,14 +29,16 @@ def sarcastic(str):
             new_string += letter
     return new_string
 
-# TODO: This function contains a bug: If the sentence is empty, it throws an
-# error. Write a unit test to catch the error (it should fail), then fix the 
-# error to make the test pass.
+
 def find_longest_word(sentence):
     """Returns the longest word in a sentence."""
+    if sentence == '':
+        return ''
+
     words_list = sentence.split()
     longest_word = words_list[0]
     for word in words_list:
         if len(word) > len(longest_word):
             longest_word = word
+
     return word
